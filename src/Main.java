@@ -15,11 +15,11 @@ public class Main {
             System.out.println("Enter the current number of gallons of gasoline in your car");
             if (scan.hasNextDouble()) {
                 gallons = scan.nextDouble();
+                scan.nextLine();
                 if (gallons < 0) {
                     System.out.println("You have entered an invalid value, Please try again");
                 }
                 if (gallons >= 0) {
-                    scan.nextLine();
                     done1 = true;
                 }
             }
@@ -32,11 +32,11 @@ public class Main {
             System.out.println("Please enter the fuel efficiency in MPG");
             if (scan.hasNextDouble()) {
             efficiency = scan.nextDouble();
+                 scan.nextLine();
                 if (efficiency < 0) {
                     System.out.println("You have entered an invalid value, Please try again");
                 }
                 if (efficiency > 0) {
-                    scan.nextLine();
                     done2 = true;
                 }
             }
@@ -49,11 +49,11 @@ public class Main {
             System.out.println("Enter the current price for 1 gallon of gas");
             if (scan.hasNextDouble()) {
                 gasCost = scan.nextDouble();
+                scan.nextLine();
                 if (gasCost < 0) {
                     System.out.println("You have entered an invalid value, Please try again");
                 }
                 if (gasCost > 0) {
-                    scan.nextLine();
                     done3 = true;
                 }
             }
